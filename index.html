@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="icon" type="image/png" href="assets/FavIcon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Student Registration System</h1>
+            <p>Register students and manage their details easily. You can add, edit, and delete student records.</p>
+        </header>
+
+        <form id="registrationForm">
+            <input type="text" id="studentName" placeholder="Student Name" required>
+            <input type="text" id="studentId" placeholder="Student ID" required>
+            <input type="email" id="email" placeholder="Email ID" required>
+            <input type="text" id="contact" placeholder="Contact Number" required>
+            <button type="submit">Add Student</button>
+        </form>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                    <!-- Student records will appear here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
